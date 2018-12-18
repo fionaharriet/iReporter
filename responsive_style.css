@@ -1,0 +1,169 @@
+body
+{
+    margin: 0 auto;
+    padding:0px;
+    text-align: left;
+    width: 50%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: gray;
+}
+/*wrapper*/
+{
+    margin:0 auto;
+    padding: 0px;
+    text-align: center;
+    width: 995px;
+}
+/*wrapper h1*/
+{
+    margin-top : 50px;
+    font-size:45px;
+    color : #424949;
+}
+   /*wrapperh1 p*/
+{
+    font-size :18px;   
+}
+.form_div
+{
+    width: 330px;
+    margin-left: 320px;
+    padding:10px;
+    background-color:#424949;
+}
+.form_div  .from_label
+{
+margin: 15px;
+font-size: 25px;
+font-weight: bold;
+color: white;
+text-decoration: underline;
+}
+
+* {box-sizing: border-box}
+.mail {
+
+width: 50%;
+padding: 10px;
+margin: 5px 0 20px 0;
+display: inline-block;
+border: none;
+background : f1f1f1;
+}
+.mail{
+background-color: #ddd;
+outline: none;
+}
+hr {
+border: 1px solid #f1f1f1;
+margin-bottom: 25px;
+}
+.pass {
+
+    width: 50%;
+    padding: 10px;
+    margin: 5px 0 20px 0;
+    display: inline-block;
+    border: none;
+    background : f1f1f1;
+}
+.pass{
+    background-color: #ddd;
+    outline: none;
+}
+hr {
+    border: 1px solid #f1f1f1;
+margin-bottom: 25px;
+ }
+
+ /*style for buttons*/
+
+ button {
+     background-color: #4CAF50;
+     color: white;
+     padding : 14px 18px;
+     margin: 8px 0;
+     border : none;
+     cursor : pointer;
+     width: 100%
+ }
+
+ /*style for cancel button*/
+
+ .cancelbutton {
+     padding: 14px 15px;
+     background-color: #f44336;
+ }
+
+ /*Float cancel and sign up buttons and add equal width*/
+
+.cancelbutton, .SignUpbutton{
+    float: left;
+    width: 20%
+}
+.cancelbutton, .SignInbutton{
+    float: left;
+    width: 20%
+}
+/*add padding to container elements*/
+.container {
+    padding: 14px;
+}
+
+/*Clear floats*/
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+
+}
+/*change styles for cancel and sign up btns on phone*/
+@media screen and (max-width: 300px){
+    .cancelbutton, .SignUpbutton{
+        width: 100%;
+    }
+}
+
+/*ABOUT US*/
+input[type=text], select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+input[type=submit]{
+    background-color:grey;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+input[type=submit]: hover{
+    background-color: #f2f2f2;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+.column {
+    float:left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+    background: skyblue;
+}
+.row:after{
+    content: "";
+    display: table;
+    clear:both;
+}
+@media screen and (max-width : 600px){
+    .column , input[type=submit]{
+        width: 100%;
+        margin-top: 0;
+    }
+}
