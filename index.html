@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>challenge11</title>
+<meta name="viewport" content="width=device-width, initial scale=1">
+<style>
+    *{
+        box-sizing:border-box;
+    }
+    body {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    /*header style*/
+    header {
+        background-color: gray;
+        padding: 1%;
+        text-align: right;
+        font-size: 35px;
+        color: white;
+    }
+    /*flexboxes container*/
+    section {
+        -webkit-flex: 1;
+        -ms-flex: 1;
+        flex:1;
+        background: #ccc;
+        padding: 50px;
+    }
+    /*inside menu*/
+    nav ul{
+        list-style-type: none;
+        padding: 0;
+    }
+    /*content*/
+    article{
+        -webkit-flex: 3;
+        -ms-flex: 3;
+        flex:3;
+        background:#f1f1f1;
+        padding: 50px; 
+    }
+    /*footer*/
+    footer {
+        background-color:grey;
+        padding:10px;
+        text-align:left;
+        color: white;
+    }
+
+    @media (max-width:600px){
+        section{
+            -webkit-flex-direction:column;
+            flex-direction:column;
+        }
+    }
+
+</style>
+</head>
+<body>
+    <header>
+        <div>
+            <h4>floa</h4>
+        </div>
+            <h2>iReporter</h2>
+
+    </header>
+    <section>
+            <nav>
+                <ul>
+                    <a href= "Home.html" class=".home"> Home</a>
+                    &nbsp
+                    <a href= "AboutUs.html" class=".AboutUs"> About Us</a>
+                    &nbsp
+                    <a href= "ContactUs.html" class=".ContactUs"> Contact Us</a>
+                </ul>
+            </nav>
+
+    </section>
+    <article>
+            <h5>iReporter</h5>
+            <p>
+                this is the place where corruption blahh blaah...
+                <p>
+                        <img src="images/stopcorrptn.png"></img>
+
+                </p>
+            </p>
+        </article>
+    <footer>
+        <p>contact us on;
+            <li>
+                contact numbers:0023</li>
+                <li>Email:fionaharriet@gmail.com</li>
+                <li>Adress: plot 20,jinja rd.</li>
+        </p>
+    </footer>
+    
+</body>
