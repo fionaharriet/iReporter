@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+    <title>user information</title>
+    <link  rel="stylesheet" href="responsive_style.css"></link>
+    <link  rel="stylesheet" href="navigation_bar.css"></link>
+    </head>
+    <body>
+            <nav>
+                    <ul>
+                            <a href= "index.html" class=".home"> Home</a>
+                            &nbsp
+                            <a href= "AboutUs.html" class=".AboutUs"> About Us</a>
+                            &nbsp
+                            <a href= "ContactUs.html" class=".ContactUs"> Report Issue</a>
+                            &nbsp
+                            <a href= "faqs.html" class=".ContactUs"> FAQS</a>
+                            &nbsp
+                            <a href= "index.html" class=".home"> Log out</a>
+                    </ul>
+            </nav>
+<div class="profilepic">
+    <img src="images/profilepic.jpg"></img>
+    <h3>Fiona m</h3>
+    <p>Kampala,Ug</p>
+</div>
+<form action="post">
+    <form>
+    <label for ="Issue_name">Create a Record</label>
+
+    <select>
+        <option value="redFlag">Red Flag</option>
+        <option value="Intervention">Intervention</option>
+
+      </select>
+    <p>Location</p>
+    
+    <i class="fa fa-map-marker"></i>
+    <button class ="location_button">Add location of Event(Optional)</button>
+    <div class ="result"></div>
+    <script>
+        var x = document.getElementById("scene");
+        function getLocation(){
+            if (navigator.geolocation){
+                navigator.geolocation.getCurrentPosition(showPosition);
+            } else{
+                x.innerHTML="Geolocation not supported by this browser";
+            }
+        }
+        function showPosition (position){
+            x.innerHTML="Latitude:" + position.coords.longitude;
+        }
+    
+    </script>
+    </form>
+    <label for="Subject" >Please post below</label>
+    <p>
+            <div class="status-update-input-box">
+                    <form>
+                        <div class="row input-box-container">
+                            <div class="columns">
+                                <label>Post here please
+                                    <textarea rows="5" placeholder="Hey,Anything new?"></textarea>
+                                </label>
+            
+                            </div>
+                        </div>
+                        <div class="row medium-collapse user-action-container">
+                            <div class="small-12 medium-7 columns">
+                                <div class="user-action-box">
+                                    <div class="action-area">
+                                        <a href="#" class="action-anchor has tip-bottom" data-tooltip aria-haspopup="true" data-disable-hover="false" tabindex="2" title="Upload an image">
+                                            <i class="fa fa-picture-o" aria-hidden="true"></i>
+                                            <span class="show-for-sr">Upload an image </span>
+                                        </a>
+                                    </div>
+                                    <div class="action-area">
+                                            <a href="#" class="action-anchor has tip-bottom" data-tooltip aria-haspopup="true" data-disable-hover="false" tabindex="2" title="Upload a video">
+                                                <i class="fa fa-video-camera" aria-hidden="true"></i>
+                                                <span class="show-for-sr">Upload a video</span>
+                                            </a>
+                                    </div>
+
+                                    <div class="action-area">
+                                            <a href="#" class="action-anchor has tip-bottom" data-tooltip aria-haspopup="true" data-disable-hover="false" tabindex="2" title="Tag a friend">
+                                                <i class="fa fa-tags" aria-hidden="true"></i>
+                                                <span class="show-for-sr">Tag A friend</span>
+                                            </a>
+                                    
+                                    </div>
+                                    <div class="small-12 medium-5 columns">
+                                        <div class="user-submit-box">
+                                            <input type="submit" class="button small" value="POST">
+                                        </div>
+                                    </div>
+            
+                                </div>
+            
+                            </div>
+                        </div>
+            
+                    </form>
+                </div>
+</form>
+<h2>User's records posted</h2>
+
+
+<table style="width: 100%">
+        <caption>Here is what you last posted</caption>
+        <b>
+         <b>  
+    <tr>
+        <th>Record/Posting</th>
+        <th>Type of Record</th>
+        <th>Status</th>
+    </tr>
+    <tr>
+        <td>Corruption by minister</td>
+        <td>Red Flag</td>
+        <td>Rejected</td>
+        
+    </tr>
+    <tr>
+            <td>Broken water pipe</td>
+            <td>Intervention</td>
+            <td>Under investigation</td>
+            
+        </tr>
+    
+</table>
+
+<a href="" class="editor_edit">Edit Post</a>  <a href="" class="delete_post">Delete Post</a>
+
+    </body>
+
+    </html>

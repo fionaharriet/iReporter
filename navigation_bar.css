@@ -1,0 +1,76 @@
+/*background color added to the nav bar*/
+.topnav {
+    background-color: grey;
+    overflow: hidden;
+    }
+    /*style links inside the nav*/
+    .topnav a{
+        float:right;
+        color: blue;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+    /*cahnge color of links on hover*/
+    .topnav a : hover {
+        background-color:#ddd;
+        color: black;
+    }
+/*color to current link*/
+.topnav a.active {
+    background-color: blue;
+    color: white;
+}
+
+/*testingplace*/
+   
+    body {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    
+/*header style*/
+header {
+    background-color: gray;
+    padding: 1%;
+    text-align: right;
+    font-size: 35px;
+    color: white;
+}
+/*flexboxes container*/
+section {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex:1;
+    background: #ccc;
+    padding: 50px;
+}
+/*inside menu*/
+nav ul{
+    list-style-type: none;
+    padding: 0;
+}
+/*content*/
+article{
+    -webkit-flex: 3;
+    -ms-flex: 3;
+    flex:3;
+    background:#f1f1f1;
+    padding: 50px; 
+}
+/*footer*/
+footer {
+    background-color:grey;
+    padding:10px;
+    text-align: center;
+    color: white;
+}
+
+@media (max-width:600px){
+    section{
+        -webkit-flex-direction:column;
+        flex-direction:column;
+    }
+}
+
+</style>

@@ -1,0 +1,417 @@
+*{
+    box-sizing:border-box;
+}
+body, html {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ 
+}
+/*header style*/
+header {
+    background-color: gray;
+    padding: 1%;
+    text-align: right;
+    font-size: 35px;
+    color: white;
+}
+/*flexboxes container*/
+section {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex:1;
+    background: #ccc;
+    padding: 50px;
+}
+/*inside menu*/
+nav ul{
+    list-style-type: none;
+    padding: 0;
+}
+/*content*/
+article{
+    -webkit-flex: 3;
+    -ms-flex: 3;
+    flex:3;
+    background:#f1f1f1;
+    padding: 50px; 
+}
+/*footer*/
+footer {
+    background-color:gray;
+    padding:10px;
+    text-align:center;
+    color:white;
+}
+
+@media (max-width:600px){
+    section{
+        -webkit-flex-direction:column;
+        flex-direction:column;
+    }
+}
+body
+{
+    margin: 0 auto;
+    padding:0px;
+    text-align: left;
+    width: 50%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: gray;
+}
+/*wrapper*/
+.wrapper{
+    margin:0 auto;
+    padding: 0px;
+    text-align: center;
+    width: 995px;
+}
+/*wrapper h1*/
+.wrapperh1{
+    margin-top : 50px;
+    font-size:45px;
+    color : #424949;
+}
+   /*wrapperh1 p*/
+{
+    font-size :18px;   
+}
+.form_div
+{
+    width: 330px;
+    margin-left: 320px;
+    padding:10px;
+    background-color:#424949;
+}
+.form_div  .from_label
+{
+margin: 15px;
+font-size: 25px;
+font-weight: bold;
+color: white;
+text-decoration: underline;
+}
+
+* {box-sizing: border-box}
+.mail {
+
+width: 50%;
+padding: 10px;
+margin: 5px 0 20px 0;
+display: inline-block;
+border: none;
+background : f1f1f1;
+}
+.mail{
+background-color: #ddd;
+outline: none;
+}
+hr {
+border: 1px solid #f1f1f1;
+margin-bottom: 25px;
+}
+.pass {
+
+    width: 50%;
+    padding: 10px;
+    margin: 5px 0 20px 0;
+    display: inline-block;
+    border: none;
+    background : f1f1f1;
+}
+.pass{
+    background-color: #ddd;
+    outline: none;
+}
+hr {
+    border: 1px solid #f1f1f1;
+margin-bottom: 25px;
+ }
+
+ /*style for buttons*/
+
+ button {
+     background-color: #4CAF50;
+     color: white;
+     padding : 14px 18px;
+     margin: 8px 0;
+     border : none;
+     cursor : pointer;
+     width: 100%
+
+ }
+ 
+
+ /*style for cancel button*/
+
+ .cancelbutton {
+     padding: 14px 15px;
+     background-color: #f44336;
+ }
+
+ /*Float cancel and sign up buttons and add equal width*/
+
+.cancelbutton, .SignUpbutton{
+    float: left;
+    width: 20%
+}
+.cancelbutton, .SignInbutton{
+    float: left;
+    width: 20%
+}
+/*add padding to container elements*/
+.container {
+    padding: 14px;
+}
+
+/*Clear floats*/
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+
+}
+/*change styles for cancel and sign up btns on phone*/
+@media screen and (max-width: 300px){
+    .cancelbutton, .SignUpbutton{
+        width: 100%;
+    }
+}
+
+/*ABOUT US*/
+input[type=text], select, textarea{
+    width: 50%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+   
+    
+}
+input[type=submit]{
+    background-color:grey;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+input[type=submit]: hover{
+    background-color: #f2f2f2;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+.column {
+    float:left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+    background: skyblue;
+}
+.row:after{
+    content: "";
+    display: table;
+    clear:both;
+}
+@media screen and (max-width : 600px){
+    .column , input[type=submit]{
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+.profilepic {
+    max-width: 300px;
+    margin:auto;
+    text-align: right;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+table,th, td{
+    border:1px solid black;
+    border-collapse: collapse;
+}
+*{
+    box-sizing:border-box;
+}
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+/*header style*/
+.header {
+    background-color: gray;
+    padding: 1%;
+    text-align: right;
+    font-size: 35px;
+    color: white;
+}
+/*flexboxes container*/
+.section {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex:1;
+    background: #ccc;
+    padding: 50px;
+}
+/*inside menu*/
+nav ul{
+    list-style-type: none;
+    padding: 0;
+}
+/*content*/
+.article{
+    -webkit-flex: 3;
+    -ms-flex: 3;
+    flex:3;
+    background:#f1f1f1;
+    padding: 50px; 
+}
+/*footer*/
+.footer {
+    background-color:grey;
+    padding:10px;
+    text-align:left;
+    color: white;
+}
+
+@media (max-width:600px){
+    section{
+        -webkit-flex-direction:column;
+        flex-direction:column;
+    }
+}
+/* Container for flexboxes */
+.dash {
+    display: -webkit-flex;
+    display: grid;
+    width:100%;
+    margin:0 auto;
+    grid-template-columns: 30% 40% 30%;
+    border: red 1px solid;
+  }
+  
+  /* Create three equal columns that sits next to each other */
+  .menu {
+    -webkit-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+    padding: 40px;
+    height: 600x; 
+  }
+  .logo-img{
+    float: left;
+    position: relative;
+    margin: 10px 15px 15px 10px;
+}
+.Logo_div{
+   background:gray;
+   overflow: hidden;
+}
+
+.fa_custom{
+color:red;
+font-size:48px;
+}
+
+
+.status-update-input-box{
+    background-color: white;
+    padding: 1px;
+    width: 100%;
+    border: 1px solid #424949;
+    box-shadow: 0 0.0625rem 0.1875rem rgba(0,0,0,0.18), 0 0.125rem 2px rgba(0,0,0,0.36);
+}
+
+    .status-update-input-box.input-box-container{
+        textarea {
+            margin-bottom: 0;
+            }
+        }
+        .status-update-input-box.input-box-container textarea:focus{
+        border: 1px solid #424949;
+        box-shadow: none;
+        }
+
+        .status-update-input-box.input-box-container textarea, .status-update-input-box.input-box-container textarea:focus{
+            border-bottom:none;
+        }
+        @media print, screen and (min-width:40em){
+            .status-update-input-box.user-action-container{
+                margin-right:0;
+                margin-left:0;
+            }
+        }
+        .status-update-input-box.user-action-container.user-action-box{
+            padding:0;
+            border:1px solid grey;
+            display: flex;
+    
+        }
+        .status-update-input-box.user-action-container.user-action-box.action-area:last-of-type{
+            border-right: none;
+        }
+        .status-update-input-box.user-action-container.user-action-box.action-area.action-anchor.has-tip{
+            border-bottom: none;
+            cursor:pointer;
+        }
+        .status-update-input-box.user-action-container.user-action-box.action-area.action-anchor.fa{
+            color:green;
+
+        }
+ 
+    }
+    .status-update-input-box.user-action-container.user-submit-box{
+        padding: 0.35rem 0.5rem;
+        border: 1px solid gray;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .status-update-input-box.user-action-container.user-submit-box{
+        margin-bottom: 0;
+    }
+
+/*...notifications for records in admindash*/
+.notification{
+    background-color: #f44336;
+    color:white;
+    text-decoration: none;
+    padding: 15px 26px;
+    position: relative;
+    display: inline-block;
+    border-radius: 50%;
+}
+.notification:hover{
+    background: green;
+}
+.notification .badge{
+    position: absolute;
+    top:-10px;
+    right:-10px;
+    padding:5px 10px;
+    border-radius: 50%;
+    background: #f44336;
+    color: white;
+}
+.records{
+    background-color:blue;
+    color:white;
+    text-decoration: none;
+    padding: 15px 26px;
+    position: relative;
+    display: inline-block;
+    border-radius: 20px;
+}
+.records:hover{
+    background:none;
+}
+.records .badge{
+    position: absolute;
+    top:-10px;
+    right:-10px;
+    padding:5px 10px;
+    border-radius: 20px;
+    background: #f44336;
+    color: white;
+}
